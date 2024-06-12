@@ -1,0 +1,15 @@
+bot:
+  name: Приоритетник
+  token: 7145343912:AAHU5tC7FkYkmNJ2exRoXrfbIfgHQ5fA0ew
+
+  #hibernate
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:123}
+  jpa:
+    hibernate:
+      ddl-auto: create
+  #spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect
